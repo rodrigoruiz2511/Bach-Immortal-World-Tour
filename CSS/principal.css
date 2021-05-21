@@ -189,6 +189,7 @@
 
 #con3 {
     grid-area: con3;
+    margin-bottom: 0;
 }
 
 
@@ -198,10 +199,11 @@
     display: grid;
     grid-template-columns: 100px repeat(3, 1fr);
     grid-template-areas: "fecha city loc bt3";
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     align-items: center;
     background-color: rgb(240, 222, 190);
+    margin-bottom: 10px;
 }
 
 .fecha {
