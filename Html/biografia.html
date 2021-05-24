@@ -1,41 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bach Immortal World Tour</title>
     <link rel="stylesheet" href="../CSS/main.css">
-    <link rel="shortcut icon" href="../Imagenes/Logo.png" type="Piano musical">
+    <link rel="stylesheet" href="../CSS/principal.css">
+    <link rel="shortcut icon" href="../Imagenes/Logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 </head>
 
 <body>
     <div class="wrapper">
         <header>
             <nav>
-                <div id="biografia">
-                    <a href="./biografia.html">Biografia</a>
-                </div>
-                <div id="eventos">
-                    <a href="./eventos.html">Eventos</a>
-                </div>
                 <div id="logo">
-                    <a href="./principal.html"><img src="../Imagenes/Logo.png" alt="Logo del evento-Piano Musiclal"></a>
+                    <a href="./principal.html"><img src="../Imagenes/Logo.png" alt="Logo del evento-Piano Musical"></a>
                 </div>
-                <div id="media">
-                    <a href="./media.html">Medias</a>
+                <div id="btRepo">
+                    <a id="bt" class="but1">
+                      &#9776; Menu
+                    </a>
                 </div>
-                <div id="contactos">
-                    <a href="./contactos.html">Contacto</a>
+                <div id="option" class="op1">
+                    <div id="biografia">
+                        <a href="./biografia.html">Biografia</a>
+                    </div>
+                    <div id="eventos">
+                        <a href="./eventos.html">Eventos</a>
+                    </div>
+
+                    <div id="media">
+                        <a href="./media.html">Media</a>
+                    </div>
+
+                    <div id="contactos">
+                        <a href="./contactos.html">Contacto</a>
+                    </div>
+
+                </div>
+                <div id="login">
+                    <a href="">Login</a>
+                </div>
+                <div id="signUp">
+                    <a href="">Sign up</a>
                 </div>
             </nav>
+            <div id="banner">
+                <div id="imagen">
+                    <img src="../Imagenes/Banner.png" alt="Banner ilustrativa">
+                </div>
+                <div id="nombre">
+                    <h1>Bach Immortal World Tour</h1>
+                </div>
+            </div>
         </header>
-        <SECtion>
-            <H1>HOLA MUNDO</H1>
-        </SECtion>
-    </div>
+        <footer>
+            <div id="fondPie">
+                <div id="pie">
+                    <div id="Copyright">
+                        <p>Derechos de autor © 2021 Abach inmortal studio – Todos los derechos reservados</p>
+                    </div>
+                    <div id="redes">
+                        <a href="https://www.facebook.com/JohannSebastianBachcomposer/"><i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/bachclassicals/"><i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://open.spotify.com/artist/5aIqB5nVVvmFsvSdExz408?utm_source=embed_v2&go=1&play=1&nd=1"><i class="fab fa-spotify"></i>
+                        </a>
+                        <a href="https://twitter.com/JohannS19887695"><i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCD7Svr1OrRWv4ij6stbPo6Q"><i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
+        <script>
+            const btRepo = document.querySelector(".but1");
+            const op = document.querySelector("#option");
+            btRepo.addEventListener("click", () => {
+                op.classList.toggle("open");
+            })
+        </script>
 </body>
 
 </html>
