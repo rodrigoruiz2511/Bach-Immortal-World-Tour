@@ -20,19 +20,27 @@
                 <div id="logo">
                     <a href="./principal.html"><img src="../Imagenes/Logo.png" alt="Logo del evento-Piano Musical"></a>
                 </div>
-                <div id="biografia">
-                    <a href="./biografia.html">Biografia</a>
+                <div id="btRepo">
+                    <a id="bt" class="but1">
+                      &#9776; Menu
+                    </a>
                 </div>
-                <div id="eventos">
-                    <a href="./eventos.html">Eventos</a>
-                </div>
+                <div id="option" class="op1">
+                    <div id="biografia">
+                        <a href="./biografia.html">Biografia</a>
+                    </div>
+                    <div id="eventos">
+                        <a href="./eventos.html">Eventos</a>
+                    </div>
 
-                <div id="media">
-                    <a href="./media.html">Media</a>
-                </div>
+                    <div id="media">
+                        <a href="./media.html">Media</a>
+                    </div>
 
-                <div id="contactos">
-                    <a href="./contactos.html">Contacto</a>
+                    <div id="contactos">
+                        <a href="./contactos.html">Contacto</a>
+                    </div>
+
                 </div>
                 <div id="login">
                     <a href="">Login</a>
@@ -137,6 +145,13 @@
             </div>
         </footer>
     </div>
+    <script>
+        const btRepo = document.querySelector(".but1");
+        const op = document.querySelector("#option");
+        btRepo.addEventListener("click", () => {
+            op.classList.toggle("open");
+        })
+    </script>
 </body>
 
 </html>

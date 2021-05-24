@@ -287,7 +287,7 @@
 
 #suscripción {
     margin: 50px auto 30px auto;
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
     cursor: pointer;
     background-color: #e4a124;
@@ -323,7 +323,7 @@ footer {
     display: flex;
     flex: 1;
     flex-wrap: wrap;
-    padding: 25px 0 25px 0;
+    padding: 20px 0 20px 0;
 }
 
 #Copyright {
@@ -332,10 +332,12 @@ footer {
     align-items: center;
     display: flex;
     flex: 1;
+    font-size: 15px;
 }
 
 #redes {
     display: flex;
+    flex-wrap: wrap;
     flex: 1;
     justify-content: flex-end;
     align-items: center;
@@ -345,7 +347,7 @@ footer {
 }
 
 #redes a {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 #redes a:hover {
@@ -372,6 +374,15 @@ footer {
     #text {
         font-size: 14px;
     }
+    #suscripción {
+        font-size: 25px;
+    }
+    #Copyright {
+        font-size: 12px;
+    }
+    #redes a {
+        font-size: 25px;
+    }
 }
 
 
@@ -393,6 +404,7 @@ footer {
     #bt1 button a {
         font-size: 15px;
     }
+    /*-----Acondicionar tabla de eventos----*/
     #tbCuerpo {
         grid-template-columns: 80px repeat(2, 1fr);
         grid-template-areas: "con1 con1 con1" "con2 con2 con2" "con3 con3 con3";
@@ -408,5 +420,45 @@ footer {
         width: 400px;
         font-size: 15px;
         padding: 10px 20px 10px 20px;
+    }
+}
+
+@media (max-width:600px) {
+    /*-------Repo Banner-----------*/
+    #imagen img {
+        font-size: 10px
+    }
+    #nombre {
+        font-size: 25px;
+    }
+    /*------Acondicionar tabla eventos----*/
+    #tbCabeza {
+        grid-template-areas: "cabeza" "bt2";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+        grid-gap: 10px;
+    }
+    .cabe {
+        text-align: center;
+    }
+    .bt2 {
+        font-size: 15px;
+    }
+    .event p {
+        font-size: 18px;
+    }
+    #tbPie a {
+        font-size: 15px;
+    }
+    /*------Spotify Twitter----*/
+    #spotifyTwitter * {
+        margin: 0 auto;
+    }
+    /*------Suscripción----*/
+    #suscripción {
+        margin: 50px auto 30px auto;
+        width: 90%;
+        font-size: 25px;
     }
 }
