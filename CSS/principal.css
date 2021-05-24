@@ -50,8 +50,6 @@
 #resumen {
     display: grid;
     grid-template-areas: 'bach tex' 'bach bt1';
-    grid-template-columns: 15em;
-    grid-template-rows: 10em;
     grid-gap: 10px;
     margin: 15px;
     background-color: white;
@@ -91,6 +89,7 @@
 #bt1 {
     grid-area: bt1;
     margin: 0 auto;
+    align-self: center;
 }
 
 #bt1 button {
@@ -302,7 +301,7 @@
 }
 
 
-/* --------------------- FOOTER-----------------*/
+/* --------------------- FOOTER--------------------------------*/
 
 footer {
     margin: 0;
@@ -351,4 +350,63 @@ footer {
 
 #redes a:hover {
     color: rgb(226, 179, 107);
+}
+
+
+/* ---------------MEDIA(max-width:1070px)--------*/
+
+@media (max-width:1070px) {
+    #text {
+        font-size: 16px;
+    }
+    .cabe {
+        align-self: center;
+        font-size: 18px;
+    }
+}
+
+
+/* ---------------MEDIA(max-width:800px)--------*/
+
+@media (max-width:800px) {
+    #text {
+        font-size: 14px;
+    }
+}
+
+
+/* ---------------MEDIA(max-width:700px)--------*/
+
+@media (max-width:700px) {
+    #resumen {
+        grid-template-areas: "bach ""text ""bt1";
+        align-items: center;
+    }
+    #text {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    #bt1 button {
+        font-size: 20px;
+        width: 200px;
+    }
+    #bt1 button a {
+        font-size: 15px;
+    }
+    #tbCuerpo {
+        grid-template-columns: 80px repeat(2, 1fr);
+        grid-template-areas: "con1 con1 con1" "con2 con2 con2" "con3 con3 con3";
+        grid-gap: 40px;
+    }
+    .event {
+        grid-template-columns: 100px repeat(2, 1fr);
+        grid-template-areas: "fecha city loc"" bt3 bt3 bt3";
+        padding-bottom: 10px;
+        grid-gap: 20px;
+    }
+    .bt3 {
+        width: 400px;
+        font-size: 15px;
+        padding: 10px 20px 10px 20px;
+    }
 }

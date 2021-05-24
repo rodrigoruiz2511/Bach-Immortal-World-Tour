@@ -22,6 +22,7 @@ body {
     background-repeat: repeat;
     background-size: cover;
     background-position: center;
+    max-width: 2000px;
 }
 
 .wrapper {
@@ -32,9 +33,9 @@ nav {
     width: 100%;
     position: fixed;
     top: 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
+    display: grid;
+    grid-template-columns: 100px repeat(4, 1fr);
+    grid-template-areas: "logo bio event media  contac login signUp";
     align-items: center;
     justify-content: left;
     background-color: var(--colorGen);
@@ -42,7 +43,6 @@ nav {
 
 nav div {
     border-radius: 25px;
-    flex-basis: 240px;
     text-align: center;
     padding: 0 5px 0 5px;
 }
@@ -60,10 +60,10 @@ a {
 }
 
 #logo {
-    padding: 0 15px;
-    flex: 0;
+    grid-area: logo;
     border-radius: 0 45% 45% 0;
     background-color: white;
+    margin-right: 15px;
 }
 
 #logo:hover {
@@ -76,18 +76,28 @@ a {
     max-width: 70px;
 }
 
+#biografia {
+    grid-area: bio;
+}
+
+#eventos {
+    grid-area: event;
+}
+
+#media {
+    grid-area: media;
+}
+
+#contactos {
+    grid-area: contac;
+}
+
 #login {
-    margin-left: 25px;
-    margin-right: 15px;
-    padding: 0 30px 0 30px;
-}
-
-#login,
-#signUp {
-    flex-basis: auto;
+    grid-area: login;
 }
 
 #signUp {
+    grid-area: signUp;
     padding: 0;
 }
 
@@ -110,4 +120,10 @@ a {
 #signUp a:hover {
     color: black;
     background-color: white;
+}
+
+@media (max-width:800px) {
+    nav {
+        grid-template-areas: "logo bio event login signUp" "logo  media contac login signUp";
+    }
 }
