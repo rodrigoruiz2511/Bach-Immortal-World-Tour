@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bach Immortal World Tour</title>
     <link rel="stylesheet" href="../CSS/main.css">
-    <link rel="stylesheet" href="../CSS/principal.css">
+    <link rel="stylesheet" href="../CSS/contactos.css">
     <link rel="shortcut icon" href="../Imagenes/Logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
@@ -49,20 +49,33 @@
                     <a href="">Sign up</a>
                 </div>
             </nav>
-            <div id="banner">
-                <div id="imagen">
-                    <img src="../Imagenes/Banner.png" alt="Banner ilustrativa">
-                </div>
-                <div id="nombre">
-                    <h1>Bach Immortal World Tour</h1>
-                </div>
-            </div>
         </header>
+
+        <section id="fond-Form">
+            <form action="" id="form-contac">
+                <div class="form-cont">
+                    <label for="nomYApe" aria-required="true">Nombre y Apellido  <span class="required">*</span></label>
+                    <input class="form-items" type="text" name="NomYApe" id="nomYApe" placeholder="Ingrese Nombre y Apellido" autocomplete="cc-name" autofocus>
+                </div>
+                <div class="form-cont">
+                    <label for="mail" aria-required="true">E-Mail  <span class="required">*</span></label>
+                    <input class="form-items" type="email" name="NomYApe" id="mail" placeholder="Ingrese Correo electrónico" autocomplete="email" autofocus>
+                </div>
+                <div class="form-cont">
+                    <label for="mensaj" aria-required="true">Mensaje:   <span class="required">*</span></label>
+                    <textarea class="form-items" name="mensaje" id="mensaj" cols="10" rows="5" placeholder="Ingrese su Mensaje" required></textarea>
+                </div>
+                <div class="form-cont" id="bt-form">
+                    <button type="submit" id="bt-submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+
         <footer>
             <div id="fondPie">
                 <div id="pie">
                     <div id="Copyright">
-                        <p>Derechos de autor © 2021 Abach inmortal studio – Todos los derechos reservados</p>
+                        <p>Derechos de autor © 2021 A Bach inmortal studio – Todos los derechos reservados</p>
                     </div>
                     <div id="redes">
                         <a href="https://www.facebook.com/JohannSebastianBachcomposer/"><i class="fab fa-facebook"></i>
@@ -87,6 +100,7 @@
                 op.classList.toggle("open");
             })
         </script>
+    </div>
 </body>
 
 </html>

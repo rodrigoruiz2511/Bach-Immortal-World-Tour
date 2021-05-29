@@ -1,0 +1,64 @@
+    nav {
+        position: relative;
+    }
+    
+    #fond-Form {
+        background-color: var(--colorFond);
+        width: 450px;
+        margin: 30px auto;
+        border-radius: 15px;
+        padding: 15px;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0);
+        display: flex;
+        flex-shrink: 3;
+    }
+    
+    #form-contac * {
+        width: 400px;
+        padding: 10px;
+    }
+    
+    .form-cont {
+        margin: 0 auto;
+        font-size: 20px;
+    }
+    
+    .form-cont label {
+        font-weight: bold;
+        color: rgb(92, 58, 25);
+    }
+    
+    .form-items {
+        margin-top: 10px;
+        background-color: rgba(255, 255, 255, 0.493);
+        border: none;
+        border-radius: 15px;
+        font-size: 18px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24);
+    }
+    
+    .form-items[placeholder] {
+        font-family: initial;
+    }
+    
+    .required {
+        color: brown;
+        font-weight: bold;
+    }
+    
+    #bt-form {
+        justify-self: center;
+        align-self: center;
+    }
+    
+    #bt-submit {
+        box-shadow: 5px 5px 5px rgba(75, 74, 73, 0.411);
+        width: 150px;
+        background-color: var(--colorBt);
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        border-radius: 15px;
+    }

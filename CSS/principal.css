@@ -301,60 +301,6 @@
 }
 
 
-/* --------------------- FOOTER--------------------------------*/
-
-footer {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(226, 179, 107);
-    position: relative;
-    top: 20px;
-}
-
-#pie {
-    margin: 15px auto;
-    padding: 0;
-    position: relative;
-    bottom: 20px;
-    border-radius: 15px;
-    background-color: var(--colorGen);
-    color: white;
-    width: 95%;
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    padding: 20px 0 20px 0;
-}
-
-#Copyright {
-    padding-left: 45px;
-    justify-content: initial;
-    align-items: center;
-    display: flex;
-    flex: 1;
-    font-size: 15px;
-}
-
-#redes {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
-    justify-content: flex-end;
-    align-items: center;
-    letter-spacing: 30px;
-    font-size: 65px;
-    padding-right: 15px;
-}
-
-#redes a {
-    font-size: 35px;
-}
-
-#redes a:hover {
-    color: rgb(226, 179, 107);
-}
-
-
 /* ---------------MEDIA(max-width:1070px)--------*/
 
 @media (max-width:1070px) {
@@ -373,15 +319,6 @@ footer {
 @media (max-width:800px) {
     #text {
         font-size: 14px;
-    }
-    #suscripción {
-        font-size: 25px;
-    }
-    #Copyright {
-        font-size: 12px;
-    }
-    #redes a {
-        font-size: 25px;
     }
 }
 
