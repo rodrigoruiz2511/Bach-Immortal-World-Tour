@@ -394,6 +394,7 @@
     /*------Spotify Twitter----*/
     #spotifyTwitter * {
         margin: 0 auto;
+        width: 300px;
     }
     /*------Suscripción----*/
     #suscripción {
