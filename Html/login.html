@@ -53,24 +53,28 @@
         <main>
             <section id="fond-Form">
                 <form action="" id="form">
-                    <div class=" form-cont">
-                        <label for="nomYApe" aria-required="true">Nombre y Apellido  <span class="required ">*</span></label>
-                        <input class="form-items" type="text" name="NomYApe" id="nomYApe" placeholder="Ingrese Nombre y Apellido" autocomplete="cc-name " autofocus>
+                    <div class="form-cont">
+                        <label for="us">Usuario</label>
+                        <input type="text" name="usuario" id="us" class="form-items" autocomplete="email" autofocus>
                     </div>
                     <div class="form-cont">
-                        <label for="mail" aria-required="true">E-Mail  <span class="required">*</span></label>
-                        <input class="form-items" type="email" name="NomYApe" id="mail" placeholder="Ingrese Correo electrónico" autocomplete="email" autofocus>
+                        <label for="pas">Contraseña</label>
+                        <input type="password" name="pasaword" id="ps" class="form-items" autofocus>
                     </div>
-                    <div class="form-cont">
-                        <label for="mensaj" aria-required="true">Mensaje:   <span class="required ">*</span></label>
-                        <textarea class="form-items" name="mensaje" id="mensaj" cols="10" rows="5" placeholder="Ingrese su Mensaje " required></textarea>
+                    <div class="form-cont" id="chk-recor">
+                        <input type="checkbox" name="recor" id="recordar" class="form-items" autofocus>
+                        <label for="recordar">Recordame</label>
+                    </div>
+                    <div class="form-cont" id="acce-log">
+                        <a href="./olv-contra.html">Olvide contraseña</a>
+                        <a href="./register.html">Registrarme</a>
                     </div>
                     <div class="form-cont" id="bt-form">
-                        <button type="submit" id="bt-submit">Enviar</button>
+                        <button id="bt-submit">Entrar</button>
                     </div>
                 </form>
-            </section>
 
+            </section>
         </main>
         <footer>
             <div id="fondPie">
@@ -93,14 +97,14 @@
                 </div>
             </div>
         </footer>
-    </div>
-    <script>
-        const btRepo = document.querySelector(".but1");
-        const op = document.querySelector("#option");
-        btRepo.addEventListener("click", () => {
-            op.classList.toggle("open");
-        })
-    </script>
+
+        <script>
+            const btRepo = document.querySelector(".but1");
+            const op = document.querySelector("#option");
+            btRepo.addEventListener("click", () => {
+                op.classList.toggle("open");
+            })
+        </script>
 </body>
 
 </html>

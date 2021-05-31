@@ -1,0 +1,42 @@
+#fond-log {
+    background-color: var(--colorFond);
+    width: 33%;
+    min-width: 450px;
+    margin: 30px auto;
+    margin-top: 100px;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+#form-log * {
+    padding: 10px;
+}
+
+.form-cont {
+    margin: 0 auto;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-cont label {
+    font-weight: bold;
+    color: rgb(92, 58, 25);
+}
+
+.form-items {
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.493);
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24);
+    width: 100%;
+}
+
+#recordar {
+    box-shadow: none;
+    width: 20px;
+    font-size: 35px;
+}
