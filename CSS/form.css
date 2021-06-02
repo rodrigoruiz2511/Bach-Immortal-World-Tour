@@ -1,4 +1,8 @@
-#fond-Form {
+nav {
+    z-index: 9999;
+}
+
+.fond-Form {
     background-color: var(--colorFond);
     width: 33%;
     min-width: 450px;
@@ -9,13 +13,13 @@
     box-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
-#form * {
-    padding: 10px;
+.form * {
+    padding: 7px;
 }
 
 .form-cont {
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 15px;
     display: flex;
     flex-direction: column;
 }
@@ -30,16 +34,13 @@
     background-color: rgba(255, 255, 255, 0.493);
     border: none;
     border-radius: 15px;
-    font-size: 18px;
+    font-size: 13px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24);
     width: 100%;
+    z-index: 2;
 }
 
-#bt-form {
-    align-items: center;
-}
-
-#bt-submit {
+.bt-submit {
     box-shadow: 5px 5px 5px rgba(75, 74, 73, 0.411);
     width: 150px;
     background-color: var(--colorBt);
@@ -49,6 +50,11 @@
     border: none;
     cursor: pointer;
     border-radius: 15px;
+    align-self: center;
+}
+
+a {
+    font-size: 15px;
 }
 
 
@@ -81,6 +87,7 @@
 #acce-log {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 #acce-log a {
@@ -92,7 +99,119 @@
 }
 
 
+/*-------------Formulario Registrar-----------------*/
+
+#fond-reg {
+    width: 60%;
+}
+
+h3 {
+    color: rgb(92, 58, 25);
+    font-size: 25px;
+}
+
+#form-reg {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "ape nom fechNac" "dire dire dire" "mail contra1 contra2" "chk-reg chk-reg chk-reg" "bt-form bt-form bt-form";
+    grid-gap: 10px;
+    grid-row: 2 0px;
+}
+
+#ape {
+    grid-area: ape;
+}
+
+#nom {
+    grid-area: nom;
+}
+
+#fechNac {
+    grid-area: fechNac;
+}
+
+#dire {
+    grid-area: dire;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#dire div {
+    margin-right: 15px;
+}
+
+#mail {
+    grid-area: mail;
+}
+
+#contra1 {
+    grid-area: contra1;
+}
+
+#contra2 {
+    grid-area: contra2;
+}
+
+#chk-reg {
+    grid-area: chk-reg;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: left;
+}
+
+#chk-reg div {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+#chk-reg div input {
+    box-shadow: none;
+    width: 20px;
+    font-size: 35px;
+    align-self: center;
+}
+
+.term-reg {
+    color: rgb(67, 67, 253);
+    text-decoration: underline;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+
+#bt-form {
+    grid-area: bt-form;
+    flex-direction: row;
+}
+
+
 /*-------------Media Responsive-----------------*/
+
+@media (max-width: 1010px) {
+    /*repo recuadro direccion*/
+    #dire {
+        flex-wrap: wrap;
+        margin: 0 auto;
+        flex-shrink: 1;
+        flex-basis: 15%;
+    }
+    #dire div {
+        align-self: center;
+    }
+    #dire div input {
+        width: 80%;
+    }
+    #t-dire {
+        bottom: 123px;
+        ;
+    }
+}
 
 @media (max-width: 900px) {
     /*-------------Formulario Contactos-----------------*/
@@ -101,6 +220,10 @@
     }
     .form-items {
         font-size: 13px;
+    }
+    /*-------------Formulario Registro-----------------*/
+    #dire div {
+        margin: 0 auto;
     }
 }
 
@@ -113,7 +236,7 @@
 
 @media (max-width: 550px) {
     /*-------------Formulario Contactos-----------------*/
-    #fond-Form {
+    .fond-Form {
         min-width: 300px;
     }
     .form-cont {
@@ -122,8 +245,15 @@
     .form-items {
         font-size: 10px;
     }
-    /*-------------Formulario Login-----------------*/
-    #acce-log a:first-child {
-        border-right: none;
+    /*-------------Formulario Registro-----------------*/
+    #form-reg {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "ape nom ""fechNac fechNac" "dire dire " "mail contra1 ""contra2 contra2" " chk-reg chk-reg" "bt-form bt-form ";
+    }
+    #dire div {
+        flex-basis: 50%;
+    }
+    #bt-form {
+        flex-direction: column;
     }
 }

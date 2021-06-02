@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bach Immortal World Tour</title>
     <link rel="stylesheet" href="../CSS/main.css">
-    <link rel="stylesheet" href="../CSS/principal.css">
+    <link rel="stylesheet" href="../CSS/form.css">
     <link rel="shortcut icon" href="../Imagenes/Logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
@@ -50,6 +50,76 @@
                 </div>
             </nav>
         </header>
+        <main>
+            <section class="fond-Form" id="fond-reg">
+                <h3>Registrar</h3>
+                <form action="" class="form" id="form-reg">
+                    <div class="form-cont" id="ape">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" class="form-items" autocomplete="cc-family-name" autofocus>
+                    </div>
+                    <div class="form-cont" id="nom">
+                        <label for="nombres">Nombre</label>
+                        <input type="text" name="nombre" class="form-items" autocomplete="given-name">
+                    </div>
+                    <div class="form-cont" id="fechNac">
+                        <label for="fechNac">Fecha de nacimiento</label>
+                        <input type="date" name="fechNac" class="form-items" autofocus>
+                    </div>
+
+                    <div id="dire">
+
+                        <div class="form-cont">
+                            <label for="pais">Pais</label>
+                            <input type="text" name="pais" id="pais" class="form-items" autocomplete="country-name" autofocus>
+                        </div>
+                        <div class="form-cont">
+                            <label for="prov">Povincia</label>
+                            <input type="text" name="prov" id="prov" class="form-items" autocomplete="address-level1" autofocus>
+                        </div>
+                        <div class="form-cont">
+                            <label for="cp">Codigo Postal</label>
+                            <input type="number" name="city" id="cp" class="form-items" autocomplete="postal-code" autofocus maxlength="4" minlength="4">
+                        </div>
+                        <div class="form-cont">
+                            <label for="city">Ciudad</label>
+                            <input type="text" name="city" id="city" class="form-items" autocomplete="address-level2" autofocus>
+                        </div>
+                    </div>
+                    <div class="form-cont" id="mail">
+                        <label for="mail">Usuario/Mail</label>
+                        <input type="mail" name="mail" class="form-items" autocomplete="email" autofocus>
+                    </div>
+                    <div class="form-cont" id="contra1">
+                        <label for="contra1">Contraseña</label>
+                        <input type="password" name="contra1" class="form-items" autocomplete="new-password" autofocus>
+                    </div>
+                    <div class="form-cont" id="contra2">
+                        <label for="contra2">Repetir Contraseña </label>
+                        <input type="password" name="contra1" class="form-items" autofocus>
+                    </div>
+                    <div class="form-cont" id="chk-reg">
+                        <div>
+                            <input type="checkbox" name="term" id="term" class="form-items" autofocus>
+                            <label for="term">Acepta los <a href="" class="term-reg">Términos y condiciones</a></label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="news" id="news" class="form-items" autofocus>
+                            <label for="news">Acepta recibir el newsletter con las noticias mas récientes</label>
+                        </div>
+                    </div>
+                    <div class="form-cont" id="bt-form">
+                        <div>
+                            <button type="submit" class="bt-submit">Enviar</button>
+                        </div>
+                        <div>
+                            <button type="reset" class="bt-submit">Resetear</button>
+                        </div>
+                    </div>
+
+                </form>
+            </section>
+        </main>
         <footer>
             <div id="fondPie">
                 <div id="pie">
