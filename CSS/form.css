@@ -77,6 +77,9 @@ a {
 }
 
 
+/*-------------Formulario olvide Contra-----------------*/
+
+
 /*-------------Formulario Login-----------------*/
 
 #chk-recor {
@@ -107,6 +110,10 @@ a {
 
 
 /*-------------Formulario Registrar-----------------*/
+
+#reg {
+    height: 100%;
+}
 
 #fond-reg {
     width: 60%;
