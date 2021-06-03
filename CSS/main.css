@@ -18,6 +18,8 @@
 
 body {
     background: url("../Imagenes/Palacio\ de\ Charlottenburg.jpg");
+    background-color: rgba(0, 0, 0, 0.301);
+    background-blend-mode: soft-light;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
