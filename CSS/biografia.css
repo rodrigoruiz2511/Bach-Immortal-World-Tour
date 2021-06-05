@@ -74,6 +74,9 @@ dd a {
         padding: 50px auto;
         width: 100%;
     }
+    .parrafo {
+        text-align: left;
+    }
     dt {
         font-size: 18px;
         text-indent: 0;
