@@ -89,4 +89,9 @@ dd a {
         margin-left: 25px;
         text-align: left;
     }
+    dd a {
+        font-size: 0.9em;
+        margin-left: 0px;
+        text-align: left;
+    }
 }
